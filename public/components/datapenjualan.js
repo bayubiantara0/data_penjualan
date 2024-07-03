@@ -55,10 +55,11 @@ function viewdata($id) {
         type: "GET",
         dataType: "JSON",
         success: function (data) {
-            $('[name="nmbarang"]').text(data.nama);
+            $('[name="nmbarang"]').text(data.namabarang);
             $('[name="ssstok"]').text(data.sisa_stok);
             $('[name="jmterjual"]').text(data.jumlah_terjual);
             $('[name="tgtransaksi"]').text(data.tanggal_transaksi);
+            $('[name="jnsbrg"]').text(data.jenisbarang);
 
             $("#modalview").modal("show");
         },

@@ -189,6 +189,11 @@
                     <div class="col-lg-1 col-md-4 label " style="font-size: 13px;">:</div>
                     <div class="col-lg-7 col-md-8" name="tgtransaksi" style="font-size: 13px;"></div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 label " style="font-size: 13px;">Jenis Barang</div>
+                    <div class="col-lg-1 col-md-4 label " style="font-size: 13px;">:</div>
+                    <div class="col-lg-7 col-md-8" name="jnsbrg" style="font-size: 13px;"></div>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-size: 13px;">Close</button>

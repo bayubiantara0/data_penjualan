@@ -154,16 +154,17 @@ class DataPenjualan extends Controller
                 $join->on('jenis_barangs.id', '=', 'barangs.jenis_barang_id');
             })
             ->select(
-                'barangs.nama',
+                'barangs.nama as namabarang',
                 'transaksis.sisa_stok',
                 'transaksis.jumlah_terjual',
                 'transaksis.tanggal_transaksi',
+                'jenis_barangs.nama as jenisbarang',
                 'transaksis.id',
             )
             ->where('transaksis.id', $id)
             ->first();
 
-        $data = Transaksi::find($id);
+        // $data = Transaksi::find($id);
         
         echo json_encode($data);
     }
